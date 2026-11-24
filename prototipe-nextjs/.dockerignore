@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+*.sqlite*
+local
+bukti
+*.tsbuildinfo
+prisma/contract.json
+prisma/contract.d.ts

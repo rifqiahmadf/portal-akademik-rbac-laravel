@@ -1,0 +1,4 @@
+SERVICE   STATUS                    PORTS
+app       Up 11 seconds (healthy)   9000/tcp
+db        Up 8 minutes (healthy)    5432/tcp
+web       Up 4 minutes (healthy)    127.0.0.1:8037->8080/tcp

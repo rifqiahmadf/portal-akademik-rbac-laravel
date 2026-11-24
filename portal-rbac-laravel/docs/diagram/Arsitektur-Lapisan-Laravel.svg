@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#14275f"/></marker><marker id="g" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#11645B"/></marker><marker id="r" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#A74442"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="52" text-anchor="start" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="30" font-weight="700" fill="#14275f"><tspan x="40" dy="0">Arsitektur lapisan aplikasi Laravel</tspan></text>
+<rect x="40" y="150" width="220" height="150" rx="10" fill="#eef4ff" stroke="#2f5bd8" stroke-width="2"/>
+<text x="150.0" y="178" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="150.0" dy="0">Rute</tspan></text>
+<text x="150.0" y="203" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="150.0" dy="0">routes/web.php</tspan><tspan x="150.0" dy="19.5">grup guest / auth</tspan><tspan x="150.0" dy="19.5">middleware rbac:x,y</tspan></text>
+<line x1="260" y1="225" x2="290" y2="225" stroke="#14275f" stroke-width="2.4" marker-end="url(#a)"/>
+<rect x="290" y="150" width="220" height="150" rx="10" fill="#eef4ff" stroke="#2f5bd8" stroke-width="2"/>
+<text x="400.0" y="178" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="400.0" dy="0">Middleware</tspan></text>
+<text x="400.0" y="203" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="400.0" dy="0">SecurityHeaders</tspan><tspan x="400.0" dy="19.5">Authenticate (sesi)</tspan><tspan x="400.0" dy="19.5">EnsureRbac → Gate</tspan></text>
+<line x1="510" y1="225" x2="540" y2="225" stroke="#14275f" stroke-width="2.4" marker-end="url(#a)"/>
+<rect x="540" y="150" width="220" height="150" rx="10" fill="#eef4ff" stroke="#2f5bd8" stroke-width="2"/>
+<text x="650.0" y="178" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="650.0" dy="0">Controller</tspan></text>
+<text x="650.0" y="203" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="650.0" dy="0">Auth · Dashboard · Profile</tspan><tspan x="650.0" dy="19.5">Krs · Grade</tspan><tspan x="650.0" dy="19.5">Registration · Account</tspan><tspan x="650.0" dy="19.5">Configuration</tspan></text>
+<line x1="760" y1="225" x2="790" y2="225" stroke="#14275f" stroke-width="2.4" marker-end="url(#a)"/>
+<rect x="790" y="150" width="220" height="150" rx="10" fill="#eef4ff" stroke="#2f5bd8" stroke-width="2"/>
+<text x="900.0" y="178" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="900.0" dy="0">Validasi &amp; Policy</tspan></text>
+<text x="900.0" y="203" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="900.0" dy="0">FormRequest (aturan input)</tspan><tspan x="900.0" dy="19.5">EnrollmentPolicy</tspan><tspan x="900.0" dy="19.5">(batas objek)</tspan></text>
+<line x1="1010" y1="225" x2="1040" y2="225" stroke="#14275f" stroke-width="2.4" marker-end="url(#a)"/>
+<rect x="1040" y="150" width="220" height="150" rx="10" fill="#eef4ff" stroke="#2f5bd8" stroke-width="2"/>
+<text x="1150.0" y="178" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="1150.0" dy="0">Service</tspan></text>
+<text x="1150.0" y="203" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="1150.0" dy="0">KrsService</tspan><tspan x="1150.0" dy="19.5">AccountService</tspan><tspan x="1150.0" dy="19.5">BusinessRuleException</tspan></text>
+<line x1="1260" y1="225" x2="1290" y2="225" stroke="#14275f" stroke-width="2.4" marker-end="url(#a)"/>
+<rect x="1290" y="150" width="220" height="150" rx="10" fill="#eef4ff" stroke="#2f5bd8" stroke-width="2"/>
+<text x="1400.0" y="178" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="1400.0" dy="0">Model Eloquent</tspan></text>
+<text x="1400.0" y="203" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="1400.0" dy="0">User · Registration</tspan><tspan x="1400.0" dy="19.5">Course · Enrollment</tspan><tspan x="1400.0" dy="19.5">Grade · Setting</tspan></text>
+<rect x="1290" y="380" width="270" height="110" rx="10" fill="#eefaf7" stroke="#11645B" stroke-width="2"/>
+<text x="1425.0" y="408" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="1425.0" dy="0">PostgreSQL 17</tspan></text>
+<text x="1425.0" y="433" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="1425.0" dy="0">batasan CHECK, FK, UNIQUE</tspan><tspan x="1425.0" dy="19.5">transaksi per operasi</tspan></text>
+<line x1="1400" y1="300" x2="1400" y2="380" stroke="#11645B" stroke-width="2.4" marker-end="url(#g)"/>
+<text x="1470" y="345" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#11645B"><tspan x="1470" dy="0">Eloquent / PDO</tspan></text>
+<rect x="40" y="380" width="480" height="150" rx="10" fill="#fff7ed" stroke="#9a6a00" stroke-width="2"/>
+<text x="280.0" y="408" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#9a6a00"><tspan x="280.0" dy="0">app/Support/Rbac.php — satu sumber kebenaran</tspan></text>
+<text x="280.0" y="433" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="280.0" dy="0">Matriks 4 peran × 6 aktivitas × 4 tindakan</tspan><tspan x="280.0" dy="19.5">dipakai oleh Gate, menu navigasi, dan halaman matriks</tspan><tspan x="280.0" dy="19.5">tabel acuan diuji di RbacPolicyTest</tspan></text>
+<line x1="280" y1="380" x2="400" y2="300" stroke="#9a6a00" stroke-width="2.4" marker-end="url(#a)"/>
+<text x="300" y="335" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#9a6a00"><tspan x="300" dy="0">Gate 'rbac'</tspan></text>
+<rect x="580" y="380" width="480" height="150" rx="10" fill="#ffffff" stroke="#5b6577" stroke-width="2"/>
+<text x="820.0" y="408" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="18" font-weight="700" fill="#14275f"><tspan x="820.0" dy="0">Blade + Tailwind CSS 4 (Vite)</tspan></text>
+<text x="820.0" y="433" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="15" font-weight="400" fill="#374151"><tspan x="820.0" dy="0">tampilan server-side, tanpa JavaScript klien</tspan><tspan x="820.0" dy="19.5">menu dibentuk dari Rbac::resourcesFor(peran)</tspan><tspan x="820.0" dy="19.5">token CSRF pada setiap form</tspan></text>
+<line x1="800" y1="380" x2="560" y2="300" stroke="#5b6577" stroke-width="2.4" marker-end="url(#a)"/>
+<text x="700" y="330" text-anchor="middle" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#5b6577"><tspan x="700" dy="0">view</tspan></text>
+<text x="40" y="610" text-anchor="start" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="16" font-weight="400" fill="#5b6577"><tspan x="40" dy="0">Alur sebuah permintaan: Rute → Middleware → Controller → (FormRequest, Policy) → Service → Model → Basis data → tampilan atau pengalihan.</tspan></text>
+<text x="40" y="640" text-anchor="start" font-family="Carlito, Calibri, 'Liberation Sans', Arial, sans-serif" font-size="16" font-weight="400" fill="#5b6577"><tspan x="40" dy="0">Penolakan terjadi sedini mungkin: 302 ke /masuk (tanpa sesi), 403 (izin/objek), 422 (input tidak valid), pesan galat bisnis (aturan akademik).</tspan></text>
+</svg>

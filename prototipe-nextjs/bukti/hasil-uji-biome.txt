@@ -1,0 +1,13 @@
+
+> portal-akademik-rbac@3.0.0 lint
+> biome check .
+
+Checked 48 files in 38ms. No fixes applied.
+
+> portal-akademik-rbac@3.0.0 format:check
+> biome format .
+
+Checked 48 files in 17ms. No fixes applied.
+
+> portal-akademik-rbac@3.0.0 typecheck
+> tsc --noEmit

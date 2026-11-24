@@ -1,0 +1,19 @@
+PASS desktop: login empat peran, navigasi, pembatasan halaman dan seluruh formulir utama.
+PASS ponsel 390 px: login mahasiswa, tombol pengajuan tampil utuh, status mengikuti konfigurasi dan registrasi, tanpa overflow halaman.
+PASS jaringan browser: tidak ada permintaan eksternal atau kesalahan JavaScript halaman desktop.
+POST /api/masuk 200
+POST /api/krs/12 201
+DELETE /api/krs/12 200
+POST /api/keluar 200
+POST /api/masuk 200
+POST /api/nilai/2 201
+PATCH /api/nilai/2 200
+POST /api/keluar 200
+POST /api/masuk 200
+PATCH /api/registrasi/101 200
+POST /api/keluar 200
+POST /api/masuk 200
+POST /api/akun 201
+PATCH /api/akun/402 200
+PATCH /api/konfigurasi 200
+POST /api/keluar 200

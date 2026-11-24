@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+:root {
+	color-scheme: light;
+	--radius: 0.65rem;
+	--background: #f2f6f6;
+	--foreground: #172738;
+	--card: #ffffff;
+	--card-foreground: #172738;
+	--popover: #ffffff;
+	--popover-foreground: #172738;
+	--primary: #11645b;
+	--primary-foreground: #ffffff;
+	--secondary: #e4f3ed;
+	--secondary-foreground: #164f46;
+	--muted: #eef3f5;
+	--muted-foreground: #526579;
+	--accent: #e7f2f1;
+	--accent-foreground: #174f49;
+	--destructive: #a02730;
+	--border: #dce5e9;
+	--input: #b8c8d0;
+	--ring: #157c70;
+	--sidebar: #122538;
+	--sidebar-foreground: #e7eef4;
+	--sidebar-primary: #a9e6cb;
+	--sidebar-primary-foreground: #122538;
+	--sidebar-accent: #24473f;
+	--sidebar-accent-foreground: #d6f9ea;
+	--sidebar-border: #344858;
+	--sidebar-ring: #4bcbb4;
+}
+
+@theme inline {
+	--font-sans:
+		system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-sidebar: var(--sidebar);
+	--color-sidebar-foreground: var(--sidebar-foreground);
+	--color-sidebar-primary: var(--sidebar-primary);
+	--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+	--color-sidebar-accent: var(--sidebar-accent);
+	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+	--color-sidebar-border: var(--sidebar-border);
+	--color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+	body {
+		@apply bg-background font-sans text-foreground;
+	}
+	button:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+.portal-hero {
+	background:
+		radial-gradient(ellipse at 90% 80%, #19786a 0, transparent 57%), #15384a;
+}
+
+@media (max-width: 767px) {
+	.study-table thead {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+	}
+	.study-table,
+	.study-table tbody {
+		display: block;
+	}
+	.study-table tr {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.75rem;
+		padding-block: 0.9rem;
+	}
+	.study-table td,
+	.study-table th {
+		display: block;
+		padding: 0;
+		white-space: normal;
+	}
+	.study-table th,
+	.study-table td:last-child {
+		grid-column: 1 / -1;
+	}
+	.study-table td[data-label]::before {
+		content: attr(data-label);
+		display: block;
+		color: var(--muted-foreground);
+		font-size: 0.8rem;
+	}
+	.study-table td:has(.no-action) {
+		display: none;
+	}
+}

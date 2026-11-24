@@ -1,0 +1,11 @@
+ Container portal-rbac-laravel-db-1 Running 
+ Container portal-rbac-laravel-db-1 Waiting 
+ Container portal-rbac-laravel-db-1 Healthy 
+ Container portal-rbac-laravel-test-run-1c8109f17fdd Creating 
+ Container portal-rbac-laravel-test-run-1c8109f17fdd Created 
+
+  ...........................................................
+
+  ──────────────────────────────────────────────────────────────────── Laravel  
+    PASS   .......................................................... 59 files  
+

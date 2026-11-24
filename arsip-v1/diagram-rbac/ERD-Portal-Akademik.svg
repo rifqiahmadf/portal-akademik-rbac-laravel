@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320"><rect width="100%" height="100%" fill="#fff"/>
+<text x="70" y="84" text-anchor="start" fill="#173247" font-family="Arial, sans-serif" font-size="42" font-weight="700"><tspan x="70" dy="0">ERD Portal Akademik</tspan></text>
+<text x="72" y="132" text-anchor="start" fill="#546A78" font-family="Arial, sans-serif" font-size="24" font-weight="400"><tspan x="72" dy="0">Relasi akun, registrasi,</tspan><tspan x="72" dy="31.200000000000003">kelas, pengajuan KRS, nilai,</tspan><tspan x="72" dy="31.200000000000003">dan konfigurasi.</tspan></text>
+<defs><marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#11645B"/></marker></defs>
+<polyline points="670,280 425,280" fill="none" stroke="#11645B" stroke-width="4" marker-end="url(#arr)"/>
+<text x="425" y="268" text-anchor="middle" fill="#11645B" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="425" dy="0">1 : N</tspan></text>
+<text x="425" y="297" text-anchor="middle" fill="#546A78" font-family="Arial, sans-serif" font-size="16" font-weight="400"><tspan x="425" dy="0">user_id</tspan></text>
+<polyline points="1110,285 1370,285" fill="none" stroke="#11645B" stroke-width="4" marker-end="url(#arr)"/>
+<text x="1370" y="273" text-anchor="middle" fill="#11645B" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="1370" dy="0">1 : N</tspan></text>
+<text x="1370" y="302" text-anchor="middle" fill="#546A78" font-family="Arial, sans-serif" font-size="16" font-weight="400"><tspan x="1370" dy="0">lecturer_id</tspan></text>
+<polyline points="760,440 760,500 460,500 460,690" fill="none" stroke="#11645B" stroke-width="4" marker-end="url(#arr)"/>
+<text x="460" y="488" text-anchor="middle" fill="#11645B" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="460" dy="0">1 : 0..1</tspan></text>
+<text x="460" y="517" text-anchor="middle" fill="#546A78" font-family="Arial, sans-serif" font-size="16" font-weight="400"><tspan x="460" dy="0">student_id</tspan></text>
+<polyline points="460,700 670,700" fill="none" stroke="#11645B" stroke-width="4" marker-end="url(#arr)"/>
+<text x="670" y="688" text-anchor="middle" fill="#11645B" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="670" dy="0">1 : N</tspan></text>
+<text x="670" y="717" text-anchor="middle" fill="#546A78" font-family="Arial, sans-serif" font-size="16" font-weight="400"><tspan x="670" dy="0">student_id</tspan></text>
+<polyline points="1370,340 1280,340 1280,720 1110,720" fill="none" stroke="#11645B" stroke-width="4" marker-end="url(#arr)"/>
+<text x="1280" y="708" text-anchor="middle" fill="#11645B" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="1280" dy="0">1 : N</tspan></text>
+<text x="1280" y="737" text-anchor="middle" fill="#546A78" font-family="Arial, sans-serif" font-size="16" font-weight="400"><tspan x="1280" dy="0">course_id</tspan></text>
+<polyline points="1110,740 1370,740" fill="none" stroke="#11645B" stroke-width="4" marker-end="url(#arr)"/>
+<text x="1370" y="728" text-anchor="middle" fill="#11645B" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="1370" dy="0">1 : 0..1</tspan></text>
+<text x="1370" y="757" text-anchor="middle" fill="#546A78" font-family="Arial, sans-serif" font-size="16" font-weight="400"><tspan x="1370" dy="0">enrollment_id</tspan></text>
+<rect x="70" y="170" width="350" height="220" rx="16" fill="#fff" stroke="#11645B" stroke-width="3"/>
+<path d="M86,170 H404 Q420,170 420,186 V225 H70 V186 Q70,170 86,170 Z" fill="#173247"/>
+<text x="88" y="205" text-anchor="start" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="88" dy="0">sessions</tspan></text>
+<text x="88" y="261" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="88" dy="0">token_hash PK</tspan></text>
+<text x="88" y="296" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="88" dy="0">user_id FK</tspan></text>
+<text x="88" y="331" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="88" dy="0">expires_at</tspan></text>
+<rect x="670" y="150" width="440" height="290" rx="16" fill="#fff" stroke="#11645B" stroke-width="3"/>
+<path d="M686,150 H1094 Q1110,150 1110,166 V205 H670 V166 Q670,150 686,150 Z" fill="#173247"/>
+<text x="688" y="185" text-anchor="start" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="688" dy="0">users</tspan></text>
+<text x="688" y="241" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">id PK</tspan></text>
+<text x="688" y="276" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">username UQ</tspan></text>
+<text x="688" y="311" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">name, email</tspan></text>
+<text x="688" y="346" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">role, password_hash</tspan></text>
+<text x="688" y="381" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">active</tspan></text>
+<rect x="1370" y="170" width="370" height="295" rx="16" fill="#fff" stroke="#11645B" stroke-width="3"/>
+<path d="M1386,170 H1724 Q1740,170 1740,186 V225 H1370 V186 Q1370,170 1386,170 Z" fill="#173247"/>
+<text x="1388" y="205" text-anchor="start" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="1388" dy="0">courses</tspan></text>
+<text x="1388" y="261" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="1388" dy="0">id PK</tspan></text>
+<text x="1388" y="296" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="1388" dy="0">code UQ</tspan></text>
+<text x="1388" y="331" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="1388" dy="0">name, credits</tspan></text>
+<text x="1388" y="366" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="1388" dy="0">schedule</tspan></text>
+<text x="1388" y="401" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="1388" dy="0">lecturer_id FK</tspan></text>
+<rect x="70" y="560" width="390" height="275" rx="16" fill="#fff" stroke="#11645B" stroke-width="3"/>
+<path d="M86,560 H444 Q460,560 460,576 V615 H70 V576 Q70,560 86,560 Z" fill="#173247"/>
+<text x="88" y="595" text-anchor="start" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="88" dy="0">registrations</tspan></text>
+<text x="88" y="651" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="88" dy="0">student_id PK/FK</tspan></text>
+<text x="88" y="686" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="88" dy="0">program</tspan></text>
+<text x="88" y="721" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="88" dy="0">cohort</tspan></text>
+<text x="88" y="756" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="88" dy="0">status</tspan></text>
+<rect x="670" y="570" width="440" height="305" rx="16" fill="#fff" stroke="#11645B" stroke-width="3"/>
+<path d="M686,570 H1094 Q1110,570 1110,586 V625 H670 V586 Q670,570 686,570 Z" fill="#173247"/>
+<text x="688" y="605" text-anchor="start" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="688" dy="0">enrollments</tspan></text>
+<text x="688" y="661" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">id PK</tspan></text>
+<text x="688" y="696" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">student_id FK</tspan></text>
+<text x="688" y="731" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">course_id FK</tspan></text>
+<text x="688" y="766" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">submitted_at</tspan></text>
+<text x="688" y="801" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">UNIQUE(student, course)</tspan></text>
+<rect x="1370" y="600" width="370" height="235" rx="16" fill="#fff" stroke="#11645B" stroke-width="3"/>
+<path d="M1386,600 H1724 Q1740,600 1740,616 V655 H1370 V616 Q1370,600 1386,600 Z" fill="#173247"/>
+<text x="1388" y="635" text-anchor="start" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="1388" dy="0">grades</tspan></text>
+<text x="1388" y="691" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="1388" dy="0">enrollment_id PK/FK</tspan></text>
+<text x="1388" y="726" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="1388" dy="0">score</tspan></text>
+<rect x="670" y="1010" width="440" height="230" rx="16" fill="#fff" stroke="#11645B" stroke-width="3"/>
+<path d="M686,1010 H1094 Q1110,1010 1110,1026 V1065 H670 V1026 Q670,1010 686,1010 Z" fill="#173247"/>
+<text x="688" y="1045" text-anchor="start" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="688" dy="0">settings</tspan></text>
+<text x="688" y="1101" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">id PK (singleton)</tspan></text>
+<text x="688" y="1136" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">institution</tspan></text>
+<text x="688" y="1171" text-anchor="start" fill="#263746" font-family="Arial, sans-serif" font-size="22" font-weight="400"><tspan x="688" dy="0">krs_open</tspan></text>
+</svg>

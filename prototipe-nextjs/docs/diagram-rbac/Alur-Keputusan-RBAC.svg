@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="780" viewBox="0 0 1700 780">
+<defs><marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#11645B"/></marker><marker id="arrred" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#A74442"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="70" y="78" text-anchor="start" fill="#173247" font-family="Arial, sans-serif" font-size="42" font-weight="700"><tspan x="70" dy="0">Alur keputusan akses RBAC</tspan></text>
+<text x="72" y="135" text-anchor="start" fill="#546A78" font-family="Arial, sans-serif" font-size="24" font-weight="400"><tspan x="72" dy="0">Sesi, peran, cakupan data, dan</tspan><tspan x="72" dy="31.200000000000003">aturan bisnis diperiksa</tspan><tspan x="72" dy="31.200000000000003">sebelum perubahan tersimpan.</tspan></text>
+<line x1="295" y1="295.0" x2="330" y2="295.0" stroke="#11645B" stroke-width="5" marker-end="url(#arr)"/>
+<line x1="565" y1="295.0" x2="600" y2="295.0" stroke="#11645B" stroke-width="5" marker-end="url(#arr)"/>
+<line x1="835" y1="295.0" x2="870" y2="295.0" stroke="#11645B" stroke-width="5" marker-end="url(#arr)"/>
+<line x1="1105" y1="295.0" x2="1140" y2="295.0" stroke="#11645B" stroke-width="5" marker-end="url(#arr)"/>
+<line x1="1375" y1="295.0" x2="1410" y2="295.0" stroke="#11645B" stroke-width="5" marker-end="url(#arr)"/>
+<rect x="60" y="220" width="235" height="150" rx="20" fill="#E7F3EF" stroke="#11645B" stroke-width="3"/>
+<text x="177.5" y="260" text-anchor="middle" fill="#173247" font-family="Arial, sans-serif" font-size="25" font-weight="700"><tspan x="177.5" dy="0">Pemohon</tspan></text>
+<text x="177.5" y="302" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="19" font-weight="400"><tspan x="177.5" dy="0">Peran tunggal</tspan><tspan x="177.5" dy="24.7">dan permintaan HTTP</tspan></text>
+<rect x="330" y="220" width="235" height="150" rx="20" fill="#F2F6F7" stroke="#11645B" stroke-width="3"/>
+<text x="447.5" y="260" text-anchor="middle" fill="#173247" font-family="Arial, sans-serif" font-size="25" font-weight="700"><tspan x="447.5" dy="0">Next.js API</tspan></text>
+<text x="447.5" y="302" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="19" font-weight="400"><tspan x="447.5" dy="0">Resource dan metode</tspan><tspan x="447.5" dy="24.7">GET, POST, PATCH, DELETE</tspan></text>
+<rect x="600" y="220" width="235" height="150" rx="20" fill="#F2F6F7" stroke="#11645B" stroke-width="3"/>
+<text x="717.5" y="260" text-anchor="middle" fill="#173247" font-family="Arial, sans-serif" font-size="25" font-weight="700"><tspan x="717.5" dy="0">Autentikasi sesi</tspan></text>
+<text x="717.5" y="302" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="19" font-weight="400"><tspan x="717.5" dy="0">Sesi valid, aktif,</tspan><tspan x="717.5" dy="24.7">dan belum kedaluwarsa</tspan></text>
+<rect x="870" y="220" width="235" height="150" rx="20" fill="#F2F6F7" stroke="#11645B" stroke-width="3"/>
+<text x="987.5" y="260" text-anchor="middle" fill="#173247" font-family="Arial, sans-serif" font-size="25" font-weight="700"><tspan x="987.5" dy="0">Kebijakan RBAC</tspan></text>
+<text x="987.5" y="302" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="19" font-weight="400"><tspan x="987.5" dy="0">Peran × aktivitas</tspan><tspan x="987.5" dy="24.7">Lihat, tambah, ubah,</tspan><tspan x="987.5" dy="24.7">hapus</tspan></text>
+<rect x="1140" y="220" width="235" height="150" rx="20" fill="#F2F6F7" stroke="#11645B" stroke-width="3"/>
+<text x="1257.5" y="260" text-anchor="middle" fill="#173247" font-family="Arial, sans-serif" font-size="25" font-weight="700"><tspan x="1257.5" dy="0">Cakupan &amp; syarat</tspan></text>
+<text x="1257.5" y="302" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="19" font-weight="400"><tspan x="1257.5" dy="0">Pemilik data, kelas</tspan><tspan x="1257.5" dy="24.7">ampuan,</tspan><tspan x="1257.5" dy="24.7">status, dan periode KRS</tspan></text>
+<rect x="1410" y="220" width="235" height="150" rx="20" fill="#E7F3EF" stroke="#11645B" stroke-width="3"/>
+<text x="1527.5" y="260" text-anchor="middle" fill="#173247" font-family="Arial, sans-serif" font-size="25" font-weight="700"><tspan x="1527.5" dy="0">Prisma + PostgreSQL</tspan></text>
+<text x="1527.5" y="302" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="19" font-weight="400"><tspan x="1527.5" dy="0">Baca atau tulis</tspan><tspan x="1527.5" dy="24.7">dalam basis data lokal</tspan></text>
+<line x1="717.5" y1="370" x2="717.5" y2="430" stroke="#A74442" stroke-width="4" marker-end="url(#arrred)"/>
+<rect x="587.5" y="430" width="260" height="110" rx="16" fill="#F9ECEB" stroke="#A74442" stroke-width="3"/>
+<text x="717.5" y="469" text-anchor="middle" fill="#A74442" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="717.5" dy="0">401</tspan></text>
+<text x="717.5" y="504" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="18" font-weight="400"><tspan x="717.5" dy="0">Sesi tidak valid</tspan></text>
+<line x1="987.5" y1="370" x2="987.5" y2="430" stroke="#A74442" stroke-width="4" marker-end="url(#arrred)"/>
+<rect x="857.5" y="430" width="260" height="110" rx="16" fill="#F9ECEB" stroke="#A74442" stroke-width="3"/>
+<text x="987.5" y="469" text-anchor="middle" fill="#A74442" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="987.5" dy="0">403</tspan></text>
+<text x="987.5" y="504" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="18" font-weight="400"><tspan x="987.5" dy="0">Peran atau objek ditolak</tspan></text>
+<line x1="1257.5" y1="370" x2="1257.5" y2="430" stroke="#A74442" stroke-width="4" marker-end="url(#arrred)"/>
+<rect x="1127.5" y="430" width="260" height="110" rx="16" fill="#F9ECEB" stroke="#A74442" stroke-width="3"/>
+<text x="1257.5" y="469" text-anchor="middle" fill="#A74442" font-family="Arial, sans-serif" font-size="27" font-weight="700"><tspan x="1257.5" dy="0">409</tspan></text>
+<text x="1257.5" y="504" text-anchor="middle" fill="#263746" font-family="Arial, sans-serif" font-size="18" font-weight="400"><tspan x="1257.5" dy="0">Syarat bisnis tidak</tspan><tspan x="1257.5" dy="23.400000000000002">terpenuhi</tspan></text>
+<text x="1527.5" y="420" text-anchor="middle" fill="#11645B" font-family="Arial, sans-serif" font-size="23" font-weight="700"><tspan x="1527.5" dy="0">200 / 201</tspan></text>
+<text x="1527.5" y="450" text-anchor="middle" fill="#546A78" font-family="Arial, sans-serif" font-size="18" font-weight="400"><tspan x="1527.5" dy="0">Permintaan berhasil</tspan></text>
+</svg>

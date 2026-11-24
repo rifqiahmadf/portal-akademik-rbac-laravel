@@ -1,0 +1,94 @@
+name: portal-rbac-laravel
+
+x-app-env: &app-env
+  APP_NAME: Portal Akademik
+  APP_LOCALE: id
+  APP_FALLBACK_LOCALE: id
+  APP_ENV: production
+  APP_DEBUG: "false"
+  APP_URL: http://127.0.0.1:${RBAC_PORT:-8036}
+  APP_KEY: ${APP_KEY:-}
+  LOG_CHANNEL: stderr
+  DB_CONNECTION: pgsql
+  DB_HOST: db
+  DB_PORT: 5432
+  DB_DATABASE: ${RBAC_DB_NAME:-akademik}
+  DB_USERNAME: portal_app
+  DB_PASSWORD: ${RBAC_DB_PASSWORD:-portal-app-demo-lokal}
+  SESSION_DRIVER: database
+  CACHE_STORE: database
+  QUEUE_CONNECTION: sync
+
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${RBAC_DB_NAME:-akademik}
+      POSTGRES_USER: portal_app
+      POSTGRES_PASSWORD: ${RBAC_DB_PASSWORD:-portal-app-demo-lokal}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./docker/initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U portal_app -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      target: app
+    restart: unless-stopped
+    environment: *app-env
+    volumes:
+      - storage:/var/www/html/storage/app
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep php-fpm >/dev/null && test -f /var/www/html/bootstrap/cache/routes-v7.php"]
+      interval: 10s
+      timeout: 3s
+      retries: 20
+
+  web:
+    build:
+      context: .
+      target: web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${RBAC_PORT:-8036}:8080"
+    depends_on:
+      app:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:8080/up >/dev/null || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  # Pengujian otomatis: docker compose --profile test run --rm test
+  test:
+    profiles: ["test"]
+    build:
+      context: .
+      target: test
+    environment:
+      APP_ENV: testing
+      APP_LOCALE: id
+      APP_FALLBACK_LOCALE: id
+      APP_KEY: base64:dGVzdC1rZXktdW50dWstcGVuZ3VqaWFuLW9ubHktISE=
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      DB_DATABASE: akademik_uji
+      DB_USERNAME: portal_app
+      DB_PASSWORD: ${RBAC_DB_PASSWORD:-portal-app-demo-lokal}
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres:
+  storage:

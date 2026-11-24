@@ -1,0 +1,67 @@
+name: portal-rbac
+services:
+  db:
+    image: postgres:19.0-bookworm@sha256:f4859caf96de494e38efa69ed703b08a5bbd9605e152e604f2daec8841c87c41
+    environment:
+      POSTGRES_USER: akademik_owner
+      POSTGRES_PASSWORD: ${RBAC_DB_OWNER_PASSWORD:-akademik-owner-local}
+      POSTGRES_DB: &database ${RBAC_DB_NAME:-akademik}
+    volumes:
+      - postgres:/var/lib/postgresql
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          'pg_isready -h 127.0.0.1 -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"',
+        ]
+      interval: 3s
+      timeout: 2s
+      retries: 20
+  db-init:
+    image: portal-akademik-rbac-db-init:local
+    build:
+      context: .
+      target: db-setup
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGHOST: db
+      PGDATABASE: *database
+      PGUSER: akademik_owner
+      PGPASSWORD: ${RBAC_DB_OWNER_PASSWORD:-akademik-owner-local}
+      RBAC_APP_PASSWORD: &app-password ${RBAC_DB_APP_PASSWORD:-akademik-app-local}
+      RBAC_LEGACY_DB: /legacy/akademik.sqlite
+    volumes:
+      - akademik:/legacy:ro
+  app:
+    image: portal-akademik-rbac:local
+    build: .
+    init: true
+    depends_on:
+      db-init:
+        condition: service_completed_successfully
+      db:
+        condition: service_healthy
+    environment:
+      PGHOST: db
+      PGDATABASE: *database
+      PGUSER: portal_app
+      PGPASSWORD: *app-password
+    ports:
+      - "127.0.0.1:${RBAC_PORT:-8036}:3000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 3s
+      timeout: 2s
+      retries: 10
+
+volumes:
+  postgres:
+  akademik:

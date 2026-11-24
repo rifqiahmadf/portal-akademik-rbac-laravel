@@ -1,0 +1,19 @@
+Verifikasi tabel Kelas dan Kartu Rencana Studi
+
+Halaman: /portal/krs
+Peran uji: mahasiswa demo nara
+Status portal: sehat, endpoint /api/health mengembalikan {"status":"ok"}
+
+Kolom tabel KRS saya:
+Kode kelas | Mata kuliah | Dosen | Jadwal | SKS | Status | Tindakan
+
+Kolom tabel Kelas tersedia:
+Kode kelas | Mata kuliah | Dosen | Jadwal | SKS | Tindakan
+
+Nama dosen dan kode dosen berada di satu sel dengan format Nama Dosen (kode dosen):
+IF201 | Basis Data | Ratih Adinata (201) | Senin 08.00–10.30 | 3 SKS
+IF204 | Pemrograman Web | Yudha Wiratama (202) | Rabu 10.00–12.30 | 3 SKS
+IF207 | Keamanan Informasi | Ratih Adinata (201) | Kamis 13.00–15.30 | 3 SKS
+IF212 | Interaksi Manusia dan Komputer | Yudha Wiratama (202) | Jumat 09.00–10.40 | 2 SKS
+
+Rentang jam selesai untuk jadwal lama dihitung dari 50 menit per SKS. Kode kelas berasal dari kode mata kuliah yang ada, dan kode dosen menggunakan ID akun dosen.

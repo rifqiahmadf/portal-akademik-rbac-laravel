@@ -1,0 +1,87 @@
+// use prisma-8
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  name     String
+  email    String @unique
+  role     String
+  password String
+  active   Int    @default(1)
+
+  sessions     Session[]
+  registration Registration?
+  courses      Course[]
+
+  @@check(expression: sql`role IN ('mahasiswa', 'dosen', 'operator', 'administrator')`, name: "valid_role")
+  @@check(expression: sql`active IN (0, 1)`, name: "valid_account_status")
+  @@map("users")
+}
+
+model Session {
+  tokenHash String @id @map("token_hash")
+  userId    Int    @map("user_id")
+  expiresAt BigInt @map("expires_at")
+  user      User   @relation(fields: [userId], references: [id])
+
+  @@index([userId], map: "sessions_by_user")
+  @@map("sessions")
+}
+
+model Registration {
+  studentId Int    @id @map("student_id")
+  program   String
+  cohort    Int
+  status    String
+  student   User   @relation(fields: [studentId], references: [id])
+  enrollments Enrollment[]
+
+  @@check(expression: sql`cohort BETWEEN 2000 AND 2100`, name: "valid_cohort")
+  @@check(expression: sql`status IN ('Aktif', 'Cuti', 'Nonaktif')`, name: "valid_registration_status")
+  @@map("registrations")
+}
+
+model Course {
+  id         Int    @id
+  code       String @unique
+  name       String
+  credits    Int
+  schedule   String
+  lecturerId Int    @map("lecturer_id")
+  lecturer   User   @relation(fields: [lecturerId], references: [id], index: false)
+  enrollments Enrollment[]
+
+  @@map("courses")
+}
+
+model Enrollment {
+  id          Int    @id @default(autoincrement())
+  studentId   Int    @map("student_id")
+  courseId    Int    @map("course_id")
+  submittedAt DateTime @default(now()) @map("submitted_at")
+  registration Registration @relation(fields: [studentId], references: [studentId], index: false)
+  course       Course       @relation(fields: [courseId], references: [id], index: false)
+  grade        Grade?
+
+  @@unique([studentId, courseId])
+  @@map("enrollments")
+}
+
+model Grade {
+  enrollmentId Int        @id @map("enrollment_id")
+  score        Int
+  enrollment   Enrollment @relation(fields: [enrollmentId], references: [id])
+
+  @@check(expression: sql`score BETWEEN 0 AND 100`, name: "valid_grade_score")
+  @@map("grades")
+}
+
+model Settings {
+  id          Int    @id
+  institution String
+  krsOpen     Int    @map("krs_open")
+
+  @@check(expression: sql`id = 1`, name: "singleton_settings")
+  @@check(expression: sql`krs_open IN (0, 1)`, name: "valid_krs_status")
+  @@map("settings")
+}

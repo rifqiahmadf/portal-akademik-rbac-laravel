@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bangun image uji
+        run: docker compose --profile test build test
+      - name: Gaya kode (Pint)
+        run: docker compose --profile test run --rm --no-deps test vendor/bin/pint --test
+      - name: Analisis statis (PHPStan/Larastan)
+        run: docker compose --profile test run --rm --no-deps test vendor/bin/phpstan analyse --memory-limit=512M --no-progress
+      - name: Pengujian otomatis (PostgreSQL)
+        run: docker compose --profile test run --rm test
+      - name: Bangun image produksi
+        run: docker compose build app web
+      - name: Pindai kerentanan dependensi
+        run: docker run --rm -v "$PWD":/app -w /app composer:2 audit --locked

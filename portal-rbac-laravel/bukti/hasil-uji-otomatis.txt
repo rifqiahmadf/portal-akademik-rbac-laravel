@@ -1,0 +1,192 @@
+ Container portal-rbac-laravel-db-1 Running 
+ Container portal-rbac-laravel-db-1 Waiting 
+ Container portal-rbac-laravel-db-1 Healthy 
+ Container portal-rbac-laravel-test-run-05ce00f9435b Creating 
+ Container portal-rbac-laravel-test-run-05ce00f9435b Created 
+
+   PASS  Tests\Unit\RbacPolicyTest
+  ✓ cell matches expected table with data set "mahasiswa/me/view"        0.01s  
+  ✓ cell matches expected table with data set "mahasiswa/me/add"
+  ✓ cell matches expected table with data set "mahasiswa/me/edit"
+  ✓ cell matches expected table with data set "mahasiswa/me/remove"
+  ✓ cell matches expected table with data set "mahasiswa/krs/view"
+  ✓ cell matches expected table with data set "mahasiswa/krs/add"
+  ✓ cell matches expected table with data set "mahasiswa/krs/edit"
+  ✓ cell matches expected table with data set "mahasiswa/krs/remove"
+  ✓ cell matches expected table with data set "mahasiswa/nilai/view"
+  ✓ cell matches expected table with data set "mahasiswa/nilai/add"
+  ✓ cell matches expected table with data set "mahasiswa/nilai/edit"
+  ✓ cell matches expected table with data set "mahasiswa/nilai/remove"
+  ✓ cell matches expected table with data set "mahasiswa/registrasi/view"
+  ✓ cell matches expected table with data set "mahasiswa/registrasi/add"
+  ✓ cell matches expected table with data set "mahasiswa/registrasi/edit"
+  ✓ cell matches expected table with data set "mahasiswa/registrasi/remove"
+  ✓ cell matches expected table with data set "mahasiswa/akun/view"
+  ✓ cell matches expected table with data set "mahasiswa/akun/add"
+  ✓ cell matches expected table with data set "mahasiswa/akun/edit"
+  ✓ cell matches expected table with data set "mahasiswa/akun/remove"
+  ✓ cell matches expected table with data set "mahasiswa/konfigurasi/view"
+  ✓ cell matches expected table with data set "mahasiswa/konfigurasi/add"
+  ✓ cell matches expected table with data set "mahasiswa/konfigurasi/edit"
+  ✓ cell matches expected table with data set "mahasiswa/konfigurasi/remove"
+  ✓ cell matches expected table with data set "dosen/me/view"
+  ✓ cell matches expected table with data set "dosen/me/add"
+  ✓ cell matches expected table with data set "dosen/me/edit"
+  ✓ cell matches expected table with data set "dosen/me/remove"
+  ✓ cell matches expected table with data set "dosen/krs/view"
+  ✓ cell matches expected table with data set "dosen/krs/add"
+  ✓ cell matches expected table with data set "dosen/krs/edit"
+  ✓ cell matches expected table with data set "dosen/krs/remove"
+  ✓ cell matches expected table with data set "dosen/nilai/view"
+  ✓ cell matches expected table with data set "dosen/nilai/add"
+  ✓ cell matches expected table with data set "dosen/nilai/edit"
+  ✓ cell matches expected table with data set "dosen/nilai/remove"
+  ✓ cell matches expected table with data set "dosen/registrasi/view"
+  ✓ cell matches expected table with data set "dosen/registrasi/add"
+  ✓ cell matches expected table with data set "dosen/registrasi/edit"
+  ✓ cell matches expected table with data set "dosen/registrasi/remove"
+  ✓ cell matches expected table with data set "dosen/akun/view"
+  ✓ cell matches expected table with data set "dosen/akun/add"
+  ✓ cell matches expected table with data set "dosen/akun/edit"
+  ✓ cell matches expected table with data set "dosen/akun/remove"
+  ✓ cell matches expected table with data set "dosen/konfigurasi/view"
+  ✓ cell matches expected table with data set "dosen/konfigurasi/add"
+  ✓ cell matches expected table with data set "dosen/konfigurasi/edit"
+  ✓ cell matches expected table with data set "dosen/konfigurasi/remove"
+  ✓ cell matches expected table with data set "operator/me/view"
+  ✓ cell matches expected table with data set "operator/me/add"
+  ✓ cell matches expected table with data set "operator/me/edit"
+  ✓ cell matches expected table with data set "operator/me/remove"
+  ✓ cell matches expected table with data set "operator/krs/view"
+  ✓ cell matches expected table with data set "operator/krs/add"
+  ✓ cell matches expected table with data set "operator/krs/edit"
+  ✓ cell matches expected table with data set "operator/krs/remove"
+  ✓ cell matches expected table with data set "operator/nilai/view"
+  ✓ cell matches expected table with data set "operator/nilai/add"
+  ✓ cell matches expected table with data set "operator/nilai/edit"
+  ✓ cell matches expected table with data set "operator/nilai/remove"
+  ✓ cell matches expected table with data set "operator/registrasi/view"
+  ✓ cell matches expected table with data set "operator/registrasi/add"
+  ✓ cell matches expected table with data set "operator/registrasi/edit"
+  ✓ cell matches expected table with data set "operator/registrasi/remove"
+  ✓ cell matches expected table with data set "operator/akun/view"
+  ✓ cell matches expected table with data set "operator/akun/add"
+  ✓ cell matches expected table with data set "operator/akun/edit"
+  ✓ cell matches expected table with data set "operator/akun/remove"
+  ✓ cell matches expected table with data set "operator/konfigurasi/view"
+  ✓ cell matches expected table with data set "operator/konfigurasi/add"
+  ✓ cell matches expected table with data set "operator/konfigurasi/edit"
+  ✓ cell matches expected table with data set "operator/konfigurasi/remove"
+  ✓ cell matches expected table with data set "administrator/me/view"
+  ✓ cell matches expected table with data set "administrator/me/add"
+  ✓ cell matches expected table with data set "administrator/me/edit"
+  ✓ cell matches expected table with data set "administrator/me/remove"
+  ✓ cell matches expected table with data set "administrator/krs/view"
+  ✓ cell matches expected table with data set "administrator/krs/add"
+  ✓ cell matches expected table with data set "administrator/krs/edit"
+  ✓ cell matches expected table with data set "administrator/krs/remove"
+  ✓ cell matches expected table with data set "administrator/nilai/view"
+  ✓ cell matches expected table with data set "administrator/nilai/add"
+  ✓ cell matches expected table with data set "administrator/nilai/edit"
+  ✓ cell matches expected table with data set "administrator/nilai/remove"
+  ✓ cell matches expected table with data set "administrator/registrasi/view"
+  ✓ cell matches expected table with data set "administrator/registrasi/add"
+  ✓ cell matches expected table with data set "administrator/registrasi/edit"
+  ✓ cell matches expected table with data set "administrator/registrasi/remove"
+  ✓ cell matches expected table with data set "administrator/akun/view"
+  ✓ cell matches expected table with data set "administrator/akun/add"
+  ✓ cell matches expected table with data set "administrator/akun/edit"
+  ✓ cell matches expected table with data set "administrator/akun/remove"
+  ✓ cell matches expected table with data set "administrator/konfigurasi/view"
+  ✓ cell matches expected table with data set "administrator/konfigurasi/add"
+  ✓ cell matches expected table with data set "administrator/konfigurasi/edit"
+  ✓ cell matches expected table with data set "administrator/konfigurasi/remove"
+  ✓ there are 96 cells
+  ✓ least privilege invariants
+
+   PASS  Tests\Feature\AuthTest
+  ✓ login succeeds with demo password                                    0.43s  
+  ✓ wrong password is rejected                                           0.25s  
+  ✓ inactive account cannot login                                        0.25s  
+  ✓ login is rate limited                                                1.06s  
+  ✓ logout ends session                                                  0.05s  
+  ✓ security headers are present                                         0.06s  
+
+   PASS  Tests\Feature\BusinessRulesTest
+  ✓ student can submit and withdraw krs                                  0.07s  
+  ✓ duplicate krs is rejected                                            0.06s  
+  ✓ krs closed period blocks changes                                     0.05s  
+  ✓ inactive registration blocks krs                                     0.05s  
+  ✓ graded enrollment cannot be withdrawn                                0.06s  
+  ✓ lecturer grades own class only                                       0.07s  
+  ✓ grade validation and add edit semantics                              0.07s  
+  ✓ operator updates registration with validation                        0.06s  
+  ✓ admin creates student with inactive registration                     0.05s  
+  ✓ admin cannot create administrator or short password                  0.05s  
+  ✓ deactivating account revokes sessions and protects admin             0.07s  
+  ✓ admin updates configuration                                          0.05s  
+  ✓ portal pages render for each role                                    0.12s  
+
+   PASS  Tests\Feature\RbacMatrixTest
+  ✓ route matches matrix with data set "mahasiswa me.view"               0.06s  
+  ✓ route matches matrix with data set "mahasiswa krs.view"              0.06s  
+  ✓ route matches matrix with data set "mahasiswa krs.add"               0.06s  
+  ✓ route matches matrix with data set "mahasiswa krs.remove"            0.05s  
+  ✓ route matches matrix with data set "mahasiswa nilai.view"            0.05s  
+  ✓ route matches matrix with data set "mahasiswa nilai.add"             0.07s  
+  ✓ route matches matrix with data set "mahasiswa nilai.edit"            0.05s  
+  ✓ route matches matrix with data set "mahasiswa registrasi.view"       0.07s  
+  ✓ route matches matrix with data set "mahasiswa registrasi.edit"       0.06s  
+  ✓ route matches matrix with data set "mahasiswa akun.view"             0.05s  
+  ✓ route matches matrix with data set "mahasiswa akun.add"              0.06s  
+  ✓ route matches matrix with data set "mahasiswa akun.edit"             0.06s  
+  ✓ route matches matrix with data set "mahasiswa konfigurasi.view"      0.05s  
+  ✓ route matches matrix with data set "mahasiswa konfigurasi.edit"      0.05s  
+  ✓ route matches matrix with data set "dosen me.view"                   0.05s  
+  ✓ route matches matrix with data set "dosen krs.view"                  0.05s  
+  ✓ route matches matrix with data set "dosen krs.add"                   0.05s  
+  ✓ route matches matrix with data set "dosen krs.remove"                0.06s  
+  ✓ route matches matrix with data set "dosen nilai.view"                0.07s  
+  ✓ route matches matrix with data set "dosen nilai.add"                 0.06s  
+  ✓ route matches matrix with data set "dosen nilai.edit"                0.06s  
+  ✓ route matches matrix with data set "dosen registrasi.view"           0.06s  
+  ✓ route matches matrix with data set "dosen registrasi.edit"           0.07s  
+  ✓ route matches matrix with data set "dosen akun.view"                 0.07s  
+  ✓ route matches matrix with data set "dosen akun.add"                  0.07s  
+  ✓ route matches matrix with data set "dosen akun.edit"                 0.08s  
+  ✓ route matches matrix with data set "dosen konfigurasi.view"          0.07s  
+  ✓ route matches matrix with data set "dosen konfigurasi.edit"          0.05s  
+  ✓ route matches matrix with data set "operator me.view"                0.05s  
+  ✓ route matches matrix with data set "operator krs.view"               0.05s  
+  ✓ route matches matrix with data set "operator krs.add"                0.05s  
+  ✓ route matches matrix with data set "operator krs.remove"             0.05s  
+  ✓ route matches matrix with data set "operator nilai.view"             0.05s  
+  ✓ route matches matrix with data set "operator nilai.add"              0.05s  
+  ✓ route matches matrix with data set "operator nilai.edit"             0.05s  
+  ✓ route matches matrix with data set "operator registrasi.view"        0.05s  
+  ✓ route matches matrix with data set "operator registrasi.edit"        0.06s  
+  ✓ route matches matrix with data set "operator akun.view"              0.05s  
+  ✓ route matches matrix with data set "operator akun.add"               0.05s  
+  ✓ route matches matrix with data set "operator akun.edit"              0.05s  
+  ✓ route matches matrix with data set "operator konfigurasi.view"       0.04s  
+  ✓ route matches matrix with data set "operator konfigurasi.edit"       0.05s  
+  ✓ route matches matrix with data set "administrator me.view"           0.05s  
+  ✓ route matches matrix with data set "administrator krs.view"          0.05s  
+  ✓ route matches matrix with data set "administrator krs.add"           0.05s  
+  ✓ route matches matrix with data set "administrator krs.remove"        0.05s  
+  ✓ route matches matrix with data set "administrator nilai.view"        0.05s  
+  ✓ route matches matrix with data set "administrator nilai.add"         0.05s  
+  ✓ route matches matrix with data set "administrator nilai.edit"        0.05s  
+  ✓ route matches matrix with data set "administrator registrasi.view"   0.04s  
+  ✓ route matches matrix with data set "administrator registrasi.edit"   0.05s  
+  ✓ route matches matrix with data set "administrator akun.view"         0.05s  
+  ✓ route matches matrix with data set "administrator akun.add"          0.05s  
+  ✓ route matches matrix with data set "administrator akun.edit"         0.05s  
+  ✓ route matches matrix with data set "administrator konfigurasi.view"  0.05s  
+  ✓ route matches matrix with data set "administrator konfigurasi.edit"  0.04s  
+  ✓ all 96 matrix cells are enumerated                                   0.05s  
+  ✓ guest is redirected to login                                         0.06s  
+
+  Tests:    175 passed (263 assertions)
+  Duration: 6.27s
+

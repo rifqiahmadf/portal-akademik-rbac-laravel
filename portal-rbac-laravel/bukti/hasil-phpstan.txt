@@ -1,0 +1,9 @@
+ Container portal-rbac-laravel-db-1 Running 
+ Container portal-rbac-laravel-db-1 Waiting 
+ Container portal-rbac-laravel-db-1 Healthy 
+ Container portal-rbac-laravel-test-run-9defbaaf2087 Creating 
+ Container portal-rbac-laravel-test-run-9defbaaf2087 Created 
+Note: Using configuration file /var/www/html/phpstan.neon.
+
+ [OK] No errors                                                                 
+

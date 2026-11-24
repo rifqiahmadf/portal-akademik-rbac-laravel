@@ -1,0 +1,20 @@
+▶ RBAC portal akademik melalui HTTP lokal
+  ✔ 01 Sesi wajib dan kredensial salah ditolak (92.843436ms)
+  ✔ 02 Seluruh matriks izin, 96 kombinasi peran × aktivitas × metode (838.22632ms)
+  ✔ 03 Profil dan riwayat studi terbatas pada sesi pemilik (46.301504ms)
+  ✔ 04 Pengajuan dan penarikan KRS hanya milik mahasiswa yang masuk (165.159189ms)
+  ✔ 05 Dosen menambah dan mengubah nilai kelas ampuan (215.790702ms)
+  ✔ 06 Registrasi berubah hanya lewat operator dan statusnya membatasi pengajuan (117.649609ms)
+  ✔ 07 Administrator membuat, memperbarui, dan menonaktifkan akun nonadministrator (324.26874ms)
+  ✔ 08 Perubahan konfigurasi mengendalikan periode KRS di server (46.343562ms)
+  ✔ 09 Server menolak mutasi lintas asal dan mencabut sesi saat keluar (24.523146ms)
+  ✔ 10 Restart server mempertahankan konfigurasi dan nilai tersimpan (1877.581069ms)
+✔ RBAC portal akademik melalui HTTP lokal (5973.410342ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6157.293662
